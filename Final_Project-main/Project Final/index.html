@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Trang chủ - LearnLinguaAI</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="home.css">
+    <!-- <script>
+        // Kiểm tra trạng thái đăng nhập
+        document.addEventListener("DOMContentLoaded", function() {
+            // Giả sử trạng thái đăng nhập được lưu trữ trong localStorage với key "loggedIn"
+            const loggedIn = localStorage.getItem("loggedIn");
+            
+            // Nếu chưa đăng nhập, điều hướng tới trang đăng nhập
+            if (!loggedIn) {
+                window.location.href = "login.html";
+            }
+        });
+    </script> -->
+</head>
+<body>
+    <header>
+        <div class="container">
+            <!-- Wrapped the logo in an anchor tag -->
+            <a href="index.html" class="logo">LearnLinguaAI</a>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Trang chủ</a></li>
+                    <li><a href="contact.html">Liên hệ</a></li>
+                    <li><a href="study.html">Bài tập</a></li>
+                    <li><a href="about.html">Giới thiệu</a></li>
+                    <li class="dropdown">
+                        <a href="#" class="dropbtn">Tài khoản</a>
+                        <div class="dropdown-content">
+                            <a href="user-profile.html">Thông tin cá nhân</a>
+                            <a href="#" id="logout-link">Đăng xuất</a>
+                        </div>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <section id="main-content">
+        <div class="container">
+            <h2>Chào mừng đến với LearnLinguaAI</h2>
+            <p>Hỗ trợ học ngoại ngữ thông minh với trí tuệ nhân tạo!</p>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2024 LearnLinguaAI. All Rights Reserved.</p>
+        </div>
+    </footer>
+
+    <script>
+        // Xử lý đăng xuất
+        document.getElementById('logout-link').addEventListener('click', function(event) {
+            event.preventDefault();
+            // Xóa trạng thái đăng nhập
+            localStorage.removeItem("loggedIn");
+            // Điều hướng về trang đăng nhập
+            window.location.href = "login.html";
+        });
+    </script>
+</body>
+</html>
